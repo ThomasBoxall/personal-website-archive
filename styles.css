@@ -1,0 +1,90 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:black;
+    
+}
+
+.head1{
+    font-size: 900%;
+    margin-top: 40%;
+    margin-bottom: 0px;
+    text-align:center;
+    color:white;
+    display:inline;
+    font-weight:bolder;
+}
+
+p{
+    font-size:150%;
+    color:white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#fiveSplit{
+    width:5%;
+    float:left;    
+}
+#fiveSplitR{
+    width:5%;
+    float:right;    
+}
+
+
+#twentySplit{
+    width:20%;
+    float:left;
+}
+
+#twentyFiveSplit{
+    width:25%;
+    float:left;
+}
+
+#thirtySplit{
+    width:30%;
+    float:left;
+    
+}
+
+#fortyFiveSplit{
+    width:45%;
+    float:left;
+}
+
+#sixtySplit{
+    width:60%;
+    float:left;
+    
+}
+
+
+
+/* MAKE LINKS FANCY */
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
