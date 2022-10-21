@@ -1,0 +1,31 @@
+body{
+    color:white;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.tenSplit{
+    width:10%;
+    float:left;
+}
+
+.eightySplit{
+    width:80%;
+    float:left;
+}
+
+@media screen and (max-width: 850px) {
+    .tenSplit{
+	  width: 0%;
+	}
+    .eightySplit{
+        width:100%;
+    }    
+}
