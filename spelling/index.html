@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Spelling App</title>
+        <link rel="stylesheet" href="../globalStyle.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js"></script>
+    </head>
+    <body onload="loadFunct()">
+        <div class="clearfix headerbox">
+            <h1>Spelling App</h1>
+        </div>
+        <div class="clearfix">
+            <div class="twentySplit">
+                <br>
+            </div>
+            <div class="mainContent clearfix">
+                <p>Enter the correct spelling of the word in the box shown below. Case doesn't matter.</p>
+                <div class="twentySplit">
+                    <br>
+                </div>
+                <div class="sixtySplit clearfix" id="mainContent">
+                    <div class="response" id="respBox">
+
+                    </div>
+                    <p id="prompt">The word is:</p>
+                    <form onsubmit="checkWord();" action="#" autocomplete="off" id="form">
+                        <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                        <input type="text" id="inputBox">
+                        <input type="submit" value="submit" id="subButton">
+                    </form>
+                    <br>
+                    <div class="fiftySplit">
+                        <p id="score"></p>
+                    </div>
+                    <div class="fiftySplit">
+                        <p id="timer" style="text-align:right;">Press submit to start timer</p>
+                    </div>
+                    <p><a href="/about" target="_blank">About this project</p>
+                </div>
+            </div>
+            <div class="twentySplit">
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
