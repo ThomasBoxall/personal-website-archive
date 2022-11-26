@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/global/gloablStyle.css">
+<link rel="stylesheet" href="styles.css">
+<title>Spelling App</title>
+<script src="script.js"></script>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+    $(function(){
+    $("#header").load("/global/header.html"); 
+    $("#footer").load("/global/footer.html"); 
+    });
+</script>
+
+<div id="header"></div>
+<header>
+    <h1>Spelling</h1>
+</header>
+<main onload="loadFunct">
+    <p class="error">Note: This project is a work in progress, this version has <span class="bold">significant</span> errors. Proceed with caution</p>
+
+    <p>Enter the correct spelling of the word in the box shown below. Case doesn't matter.</p>
+    <p id="prompt">The word is:</p>
+    <form onsubmit="checkWord();" action="#" autocomplete="off" id="form">
+        <input autocomplete="false" name="hidden" type="text" style="display:none;">
+        <input type="text" id="inputBox">
+        <input type="submit" value="submit" id="subButton">
+    </form>
+    <p class="score" id="score"></p>
+    <p class="timer" id="timer">Press submit to start the timer</p>
+    <p><a href="about/" target="_blank">About this project</a></p>
+</main>
+<div id="footer">

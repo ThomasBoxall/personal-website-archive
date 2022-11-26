@@ -1,0 +1,50 @@
+h1{
+    font-size: 900%;
+    text-align:center;
+    color:white;
+    font-weight:bolder;
+    margin: 15% auto 0 auto;
+    padding: 0;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.links{
+    padding-left:30%;
+    padding-right:30%;
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin: auto;
+}
+
+
+
+.big-font{
+    font-size: 150%;
+}
+.space{
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+
+
+/* MAKE PAGES RESPONSIVE */
+
+@media screen and (max-width:600px){
+    h1{
+        font-size:600%;
+    }
+    .links{
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+}

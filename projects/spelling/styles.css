@@ -1,0 +1,19 @@
+#inputBox{
+    width:70%;
+}
+
+#subButton{
+    width:20%;
+}
+
+#response{
+    width:100%;
+    float:left;
+}
+
+@media screen and (max-width: 850px) {
+    #inputBox{
+        width:100%;
+    }
+    
+}
