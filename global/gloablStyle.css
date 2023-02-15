@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sono&display=swap');
 @import "/global/headerStyle.css";
 
 html{
     background-color: black;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Sono', 'Montserrat', sans-serif;
     font-size: 18px;
 }
 
@@ -43,8 +44,16 @@ a{
     font-style: italic;
 }
 
+.mono{
+    font-family: 'Courier New', Courier, monospace;
+}
 
-/* MAKE THE PAGES RESPONSIVE */
+.green{
+    color: #41FF00;
+}
+
+
+/* MAKE THE PAGES RESPONSIVE-ish */
 
 @media screen and (max-width:600px){
     header, main{

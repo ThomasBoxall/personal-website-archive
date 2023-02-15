@@ -11,10 +11,13 @@
     height: 300px;
     margin: 1em;
     position: relative;
+    border: 1px solid white;
+    box-shadow:0px 0px 8px white;
 }
 
 .project:hover{
-    border: 2px solid red;
+    border: 1px solid red;
+    box-shadow: 0px 0px 8px red;
 }
 
 .project-image{
@@ -35,7 +38,7 @@
 
 .project-blurb{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 20px;
     overflow: hidden;
 }
@@ -51,6 +54,7 @@
     object-fit:cover;
     filter: blur(2px);
     opacity: 0.3;
+    height: 300px;
 }
 
 .project-page-header h1{

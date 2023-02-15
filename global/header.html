@@ -1,24 +1,23 @@
-<script>
-    function topNavFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-    }
-</script>
-
-
-<div class="topnav" id="myTopnav">
-    <p class="name">thomasboxall.net</p>
-    <a href="/">Home</a>
-    <a href="/projects/">Projects</a>
-    <a href="/contact/">Contact</a>
-    <a href="/about/">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
-
-<!-- look at https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ to make better looking navbar -->
+<nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo"><a href="/" class="mono"><span class="green">&lt;</span>Thomas Boxall<span class="green">/&gt;</span></a></div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown-top">   
+                <a href="/about/">About</a>
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                    <li><a href="/about/calendar/">Calendar </a></li>
+                </ul>
+            </li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </div>
+    </ul>
+</nav>
