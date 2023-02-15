@@ -1,17 +1,17 @@
-.skill-gallery{
+.skills-gallery{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .skill{
     border-radius: 10px;
     max-width: 60px;
     height: 60px;
-    margin: 1em;
+    margin: 0.5em;
     position: relative;
-    border: 0px;
+    /* border: 1px solid white; */
 }
 
 .skill-image{
